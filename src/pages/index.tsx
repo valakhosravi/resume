@@ -1,117 +1,215 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
+import { Assistant } from "next/font/google";
+import {
+  PiPhone,
+  PiEnvelopeSimple,
+  PiMapPin,
+  PiLinkedinLogo,
+  PiGithubLogo,
+  PiCalendarBlank,
+} from "react-icons/pi";
 
-const inter = Inter({ subsets: ["latin"] });
+const assistant = Assistant({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className={assistant.className}>
+      <div className="bg-black">
+        <div className="w-[1240px] h-[1752px] mx-auto border p-4 bg-white">
+          <div className="">
+            <div className="text-sky-900 text-[32px] font-black tracking-wider">
+              Vala Khosravi
+            </div>
+            <div className="text-sky-700 tracking-wider">
+              Front-end Developer
+            </div>
+            <div className="text-sky-500 tracking-wider flex text-sm">
+              <div className="flex items-center me-4">
+                <span>
+                  <PiEnvelopeSimple />
+                </span>
+                <span className="ps-1">valakhosravi@outlook.com</span>
+              </div>
+              <div className="flex items-center me-4">
+                <span>
+                  <PiPhone />
+                </span>
+                <span className="ps-1">+98 935 253 5150</span>
+              </div>
+              <div className="flex items-center me-4">
+                <span>
+                  <PiMapPin />
+                </span>
+                <span className="ps-1">Tehran, Iran</span>
+              </div>
+              <div className="flex items-center me-4">
+                <span>
+                  <PiLinkedinLogo />
+                </span>
+                <a
+                  className="ps-1"
+                  href="https://www.linkedin.com/in/vala-khosravi/"
+                  target="_blank"
+                >
+                  linkedin.com
+                </a>
+              </div>
+              <div className="flex items-center me-4">
+                <span>
+                  <PiGithubLogo />
+                </span>
+                <a
+                  className="ps-1"
+                  href="https://www.linkedin.com/in/vala-khosravi/"
+                  target="_blank"
+                >
+                  github.com
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="flex">
+            <div className="w-[60%]">
+              <div className="mb-4">
+                <div className="text-gray-500 text-[20px] border-b-2 pt-2 mb-2 tracking-tight">
+                  SUMMARY
+                </div>
+                <div className="text-sm text-justify">
+                  Experienced and innovative full stack developer (FE heavy)
+                  with over 4 years of expertise in web development across
+                  diverse industries, including experience with React and
+                  Angular. A task-driven professional with a proven track record
+                  of delivering high-quality work on time and within budget.
+                  Eager to take on leadership responsibilities and contribute to
+                  large-scale projects. Flexible and adaptable, with the ability
+                  to work remotely or relocate as needed.
+                </div>
+              </div>
+              <div className="mb-4">
+                <div className="text-gray-500 text-[20px] border-b-2 pt-2 mb-2 tracking-tight">
+                  EXPERIENCE
+                </div>
+                <div className="mb-3">
+                  <div className="text-xl">Front-end Developer</div>
+                  <div className="font-bold text-sky-400 tracking-wide">
+                    Mofid Securities
+                  </div>
+                  <div className="flex items-center text-xs mb-2 text-gray-500">
+                    <span className="flex items-center">
+                      <span>
+                        <PiCalendarBlank />
+                      </span>
+                      <span className="ms-1">2023 - 2024</span>
+                    </span>
+                    <span className="flex items-center ms-4">
+                      <span>
+                        <PiMapPin />
+                      </span>
+                      <span className="ms-1">2023 - 2024</span>
+                    </span>
+                  </div>
+                  <div className="text-sm text-justify">
+                    Demonstrates strong collaboration with both front-end and
+                    back-end developers, ensuring efficient cross-functional
+                    communication and a harmonious workflow.
+                  </div>
+                  <div className="ps-4">
+                    <ul className="text-sm text-justify list-disc">
+                      <li>
+                        Collaborated closely with cross-functional teams,
+                        conducted rigorous testing, and documented
+                        implementation details for seamless integration.
+                      </li>
+                      <li>
+                        fostering a supportive atmosphere that enhances overall
+                        team productivity and success.
+                      </li>
+                      <li>
+                        The successful refactoring effort received a
+                        commendation for its significant impact on system
+                        efficiency.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="mb-3">
+                  <div className="text-xl">Full-stack Developer</div>
+                  <div className="font-bold text-sky-400 tracking-wide">
+                    SPAR Iran
+                  </div>
+                  <div className="flex items-center text-xs mb-2 text-gray-500">
+                    <span className="flex items-center">
+                      <span>
+                        <PiCalendarBlank />
+                      </span>
+                      <span className="ms-1">2023 - 2024</span>
+                    </span>
+                    <span className="flex items-center ms-4">
+                      <span>
+                        <PiMapPin />
+                      </span>
+                      <span className="ms-1">Tehran, Iran</span>
+                    </span>
+                  </div>
+                  <div className="text-sm text-justify">
+                    Demonstrates strong collaboration with both front-end and
+                    back-end developers, ensuring efficient cross-functional
+                    communication and a harmonious workflow.
+                  </div>
+                  <div className="ps-4">
+                    <ul className="text-sm text-justify list-disc">
+                      <li>
+                        Collaborated closely with cross-functional teams,
+                        conducted rigorous testing, and documented
+                        implementation details for seamless integration.
+                      </li>
+                      <li>
+                        fostering a supportive atmosphere that enhances overall
+                        team productivity and success.
+                      </li>
+                      <li>
+                        The successful refactoring effort received a
+                        commendation for its significant impact on system
+                        efficiency.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-[40%] ps-[4rem]">
+              <div className="text-gray-500 text-[20px] border-b-2 pt-2 mb-2 tracking-tight">
+                SKILLS
+              </div>
+              <div className="text-sm">
+                <span className="border border-sky-200 text-sky-700 rounded-full px-3 py-1 inline-block bg-sky-50 me-1 mb-1">
+                  Javascript
+                </span>
+                <span className="border border-sky-200 text-sky-700 rounded-full px-3 py-1 inline-block bg-sky-50 me-1 mb-1">
+                  Next.js
+                </span>
+                <span className="border border-sky-200 text-sky-700 rounded-full px-3 py-1 inline-block bg-sky-50 me-1 mb-1">
+                  React
+                </span>
+                <span className="border border-sky-200 text-sky-700 rounded-full px-3 py-1 inline-block bg-sky-50 me-1 mb-1">
+                  Typescript
+                </span>
+                <span className="border border-sky-200 text-sky-700 rounded-full px-3 py-1 inline-block bg-sky-50 me-1 mb-1">
+                  HTML
+                </span>
+                <span className="border border-sky-200 text-sky-700 rounded-full px-3 py-1 inline-block bg-sky-50 me-1 mb-1">
+                  CSS/SASS
+                </span>
+                <span className="border border-sky-200 text-sky-700 rounded-full px-3 py-1 inline-block bg-sky-50 me-1 mb-1">
+                  Tailwind CSS
+                </span>
+                <span className="border border-sky-200 text-sky-700 rounded-full px-3 py-1 inline-block bg-sky-50 me-1 mb-1">
+                  Git
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
       </div>
     </main>
   );
