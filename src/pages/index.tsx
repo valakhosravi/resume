@@ -17,12 +17,6 @@ import {
 } from "react-icons/pi";
 
 import { usePDF } from "react-to-pdf";
-import { pdfjs } from "react-pdf";
-
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.min.js",
-  import.meta.url
-).toString();
 
 export default function Home() {
   const { toPDF, targetRef } = usePDF({ filename: "Vala_Khosravi.pdf" });
@@ -362,20 +356,20 @@ export default function Home() {
                         Shahid Beheshti University
                       </a>
                     </div>
-                    <div className="flex items-center text-sm text-gray-500 ms-4">
-                      <span className="flex items-center">
-                        <span>
-                          <PiCalendarBlank />
-                        </span>
-                        <span className="ms-1">2020 - 2023</span>
+                  </div>
+                  <div className="flex items-center text-sm text-gray-500">
+                    <span className="flex items-center">
+                      <span>
+                        <PiCalendarBlank />
                       </span>
-                      <span className="flex items-center ms-4">
-                        <span>
-                          <PiMapPin />
-                        </span>
-                        <span className="ms-1">Tehran, Iran</span>
+                      <span className="ms-1">2020 - 2023</span>
+                    </span>
+                    <span className="flex items-center ms-4">
+                      <span>
+                        <PiMapPin />
                       </span>
-                    </div>
+                      <span className="ms-1">Tehran, Iran</span>
+                    </span>
                   </div>
                 </div>
                 <div className="mb-3">
@@ -391,20 +385,20 @@ export default function Home() {
                           Shahid Beheshti University
                         </a>
                       </div>
-                      <div className="flex items-center text-sm text-gray-500 ms-4">
-                        <span className="flex items-center">
-                          <span>
-                            <PiCalendarBlank />
-                          </span>
-                          <span className="ms-1">2015 - 2019</span>
+                    </div>
+                    <div className="flex items-center text-sm text-gray-500">
+                      <span className="flex items-center">
+                        <span>
+                          <PiCalendarBlank />
                         </span>
-                        <span className="flex items-center ms-4">
-                          <span>
-                            <PiMapPin />
-                          </span>
-                          <span className="ms-1">Tehran, Iran</span>
+                        <span className="ms-1">2015 - 2019</span>
+                      </span>
+                      <span className="flex items-center ms-4">
+                        <span>
+                          <PiMapPin />
                         </span>
-                      </div>
+                        <span className="ms-1">Tehran, Iran</span>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -533,8 +527,9 @@ export default function Home() {
                     href="http://stage.s-pay.click/"
                     target="_blank"
                     rel="noopener noreferrer"
-                  ></a>
-                  S-Pay
+                  >
+                    S-Pay
+                  </a>
                 </div>
                 <div>
                   I independently developed a dynamic payment application,
@@ -565,9 +560,13 @@ export default function Home() {
                   </a>
                 </div>
                 <div>
-                  Implemented an e-commerce front-end from Figma design,
-                  ensuring a faithful translation of the visual concept into a
-                  fully functional and visually appealing user interface.
+                  Led the implementation of an e-commerce front-end based on
+                  Figma design, meticulously translating the visual concept into
+                  a fully functional and aesthetically pleasing user interface.
+                  Utilized responsive design principles to ensure optimal user
+                  experience across various devices. Integrated interactive
+                  elements and navigation features, contributing to an engaging
+                  and seamless online shopping experience for users.
                 </div>
               </div>
               {/* <div>
