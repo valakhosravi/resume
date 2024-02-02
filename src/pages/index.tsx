@@ -25,11 +25,11 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ).toString();
 
 export default function Home() {
-  const { toPDF, targetRef } = usePDF({ filename: "page.pdf" });
+  const { toPDF, targetRef } = usePDF({ filename: "Vala_Khosravi.pdf" });
 
   return (
     <main>
-      <div className="bg-black">
+      <div className="main-background">
         <div className="fixed bottom-0 z-10 text-center left-0 right-0 pb-4">
           <button
             onClick={() => toPDF()}
@@ -42,7 +42,7 @@ export default function Home() {
           </button>
         </div>
         <div
-          className="w-[1240px] h-[1752px] mx-auto bg-white"
+          className="w-[1240px] h-[1752px] mx-auto bg-white shadow-lg"
           ref={targetRef}
           id="main-page"
         >
@@ -121,16 +121,15 @@ export default function Home() {
                   SUMMARY
                 </div>
                 <div className="text-md text-justify">
-                  Experienced and innovative front-end developer with over 4
-                  years of expertise in web development across diverse
-                  industries, including proficiency in React. A task-driven
-                  professional with a proven track record of delivering
-                  high-quality work on time and within budget. Well-versed in
-                  collaborating with international companies, contributing to
-                  the success of cross-cultural projects. Eager to take on
-                  leadership responsibilities and contribute to large-scale
-                  front-end projects. Flexible and adaptable, with the ability
-                  to work remotely or relocate as needed.
+                  Experienced front-end developer with over 4 years of expertise
+                  in web development across diverse industries, specializing in
+                  React. A task-driven professional with a proven track record
+                  of delivering high-quality work on time and within budget.
+                  Experienced in collaborating with international companies,
+                  contributing to the success of cross-cultural projects. Eager
+                  to take on leadership responsibilities and contribute to
+                  large-scale front-end projects. Flexible and adaptable, with
+                  the ability to work remotely or relocate as needed.
                 </div>
               </div>
               <div className="mb-[24px]">
@@ -529,7 +528,14 @@ export default function Home() {
                 </div>
               </div>
               <div className="mb-3">
-                <div className="text-sky-500 font-bold text-xl">S-Pay</div>
+                <div className="text-sky-500 font-bold text-xl">
+                  <a
+                    href="http://stage.s-pay.click/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  ></a>
+                  S-Pay
+                </div>
                 <div>
                   I independently developed a dynamic payment application,
                   handling both front-end and back-end tasks using Next.js and
@@ -548,15 +554,23 @@ export default function Home() {
                   appealing user interface.
                 </div>
               </div>
-              {/* <div className="mb-3">
-                <div className="text-sky-500 font-bold text-xl">Compilerly</div>
-                <div>
-                  conducts thorough quality assurance processes, and provides
-                  comprehensive documentation for code and project
-                  specifications.
+              <div className="mb-3">
+                <div className="text-sky-500 font-bold text-xl">
+                  <a
+                    href="https://cwi-frontend-q8pgfjc99-valakhosravi.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    CWI
+                  </a>
                 </div>
-              </div> */}
-              <div>
+                <div>
+                  Implemented an e-commerce front-end from Figma design,
+                  ensuring a faithful translation of the visual concept into a
+                  fully functional and visually appealing user interface.
+                </div>
+              </div>
+              {/* <div>
                 <div className="text-gray-500 text-2xl border-b-2 pt-2 mb-4 tracking-tight pb-1">
                   LANGUAGES
                 </div>
@@ -568,7 +582,7 @@ export default function Home() {
               <div className=" flex justify-between">
                 <span className="font-bold text-lg">Farsi</span>
                 <span>Native</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
