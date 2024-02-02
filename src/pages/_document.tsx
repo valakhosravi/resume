@@ -10,7 +10,6 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap"
           rel="stylesheet"
         />
-        <title>Vala Khosravi - Resume</title>
       </Head>
       <body>
         <Main />

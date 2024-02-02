@@ -1,4 +1,3 @@
-"use client";
 import exportToPdf from "@/utils/export";
 import { Assistant } from "next/font/google";
 import {
@@ -23,6 +22,8 @@ export default function Home() {
 
   return (
     <main>
+      <title>Vala Khosravi - Resume</title>
+
       <div className="main-background">
         <div className="fixed bottom-0 z-10 text-center left-0 right-0 pb-4">
           <button
